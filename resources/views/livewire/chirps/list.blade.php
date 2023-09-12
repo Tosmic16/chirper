@@ -82,10 +82,11 @@ new class extends Component {
                     @endif
                     </div>
                     @if ($chirp->is($editing)) 
-                    <livewire:chirps.edit :chirp="$chirp" :key="$chirp->id" />
+                    <livewire:chirps.edit :chirp="$chirp" />
                 @else
                     <p class="mt-4 text-lg text-gray-900">{{ $chirp->message }}</p>
                 @endif                 </div>
-            </div>
+            </div>          
+              
         @endforeach 
 </div>
